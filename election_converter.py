@@ -29,6 +29,7 @@ with open('./proposed_amendments.csv') as csvfile:
             raise ValueError("Kill switch on-wiki is false. Terminating program.")
         if move_page(row[0],row[1]):
             f.write("Converted " + row[0] + " ----> " + row[1] + "\n")
+                sleep(4)   # 4 second sleep between moves, can be adjusted as needed
         else:
             f.write("Attempted conversion from " + row[0] + " ----> " + row[1] + " -----, but something went wrong.\n")
             print("Something went wrong")
