@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.6
-import time,mwclient,csv, json, configparser
+import time,mwclient, json, configparser
 from time import sleep
 
 def call_home(site):
