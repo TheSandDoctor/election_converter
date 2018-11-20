@@ -21,6 +21,7 @@ listing = []
 listing2 = []
 rows = []
 f = open('./completing.txt','a+')
+
 #f2 = open('./output01.txt','a+')
 with open('./proposed_amendments.csv') as csvfile:
     readCSV = csv.reader(csvfile,delimiter=',')
