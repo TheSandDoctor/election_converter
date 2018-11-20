@@ -6,10 +6,7 @@ def call_home(site):
     #page = site.Pages['User:' + config.get('enwiki','username') + "/status"]
     page = site.Pages['User:TheSandBot/status']
     text = page.text()
-    data = json.loads(text)["run"]["election_converter"]
-    if data:
-        return True
-    return False
+    return bool(json.loads(text)["run"]["election_converter"])
 def move_page(old_title,new_title):
     page = site.Pages[old_title]
     edit_summary = """Moving page per result of [[Special:Diff/864130819|RfC on election/referendum page naming format]] using [[User:""" + config.get('enwikitsb','username') + "| " + config.get('enwikitsb','username') + """]]. Questions? See [[Special:Diff/864130819|the RfC]] or [[User talk:TheSandDoctor|msg TSD!]] (please mention that this is task #1!))"""
