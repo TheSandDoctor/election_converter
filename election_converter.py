@@ -10,9 +10,7 @@ def call_home(site):
 def move_page(old_title,new_title):
     page = site.Pages[old_title]
     edit_summary = """Moving page per result of [[Special:Diff/864130819|RfC on election/referendum page naming format]] using [[User:""" + config.get('enwikitsb','username') + "| " + config.get('enwikitsb','username') + """]]. Questions? See [[Special:Diff/864130819|the RfC]] or [[User talk:TheSandDoctor|msg TSD!]] (please mention that this is task #1!))"""
-    if page.exists and page.redirects_to() == None:
-        return page.move(new_title,reason=edit_summary,move_talk=True, no_redirect=False)
-    return None
+    return page.move(new_title,reason=edit_summary,move_talk=True, no_redirect=False) if page.exists and page.redirects_to() == None else None
 
 listing = []
 listing2 = []
