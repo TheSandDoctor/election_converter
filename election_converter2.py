@@ -24,5 +24,5 @@ for mat in match:
     elif move_page(mat[0],mat[1]):
         fh.write("Converted " + mat[0] + " ----> " + mat[1] + "\n")
     else:
-        fh.write("CONVERTION FAILED " + mat[0] to mat[1])
+        fh.write("CONVERTION FAILED " + mat[0] + " to " + mat[1])
 f.close()
