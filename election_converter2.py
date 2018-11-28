@@ -30,11 +30,11 @@ if __name__ == "__main__":
                 #print(e[1]['reason'])
             print(e)
             raise ValueError("Login failed.")
-        source_page = site.Pages['User:Number 57/Elections/Propositions']
+        source_page = site.Pages['User:Number 57/Elections/By-elections']
         text = source_page.text()
         match = re.findall(r"\*\[\[(.*)\]\] to \[\[(.*)\]\]",text)
         counter = 0
-        fh = open("election_converter_results2.txt","w")
+        fh = open("election_converter_results_by-elections.txt","w")
         for mat in match:
             if counter < 113:
                 counter += 113
