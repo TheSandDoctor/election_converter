@@ -1,0 +1,3 @@
+# election_converter
+
+This project was created in relation with the filing of [TheSandBot's first Bot Request for Approval](https://en.wikipedia.org/wiki/Wikipedia:Bots/Requests_for_approval/TheSandBot) in October 2018 to enact new community consensus on the naming format of election articles. It resulted in approximately 70,000 edits on the English Wikipedia. This task is now complete and there is nothing left at this time for this code to do. As such, ***this project is*** mostly ***archived*** and will most likely not receive frequent future updates. Prior to this commit for the readme and some organizational updates, the last commit was November 27, 2018.
